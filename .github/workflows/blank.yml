@@ -29,5 +29,7 @@ jobs:
         run: |
           nslookup google.com
           ping -c 4 172.217.1.206
+          
+          echo "Blocking IP"
           sudo ufw deny from 172.217.1.206 to any
           ping -c 4 172.217.1.206
