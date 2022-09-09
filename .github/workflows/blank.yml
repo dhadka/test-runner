@@ -28,3 +28,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           nslookup google.com
+          ping 172.217.1.206
+          sudo ufw deny from 172.217.1.206 to any
+          ping 172.217.1.206
